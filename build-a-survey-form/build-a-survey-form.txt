@@ -1,0 +1,272 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="survey-form" action="form">
+      <group class="About">
+        <h1 id="title">Survey Form <a href="https://www.freecodecamp.org">freecodecamp.org</a></h1>
+        <p id="description">I made this Survey form from one of the freecodecamp's tests - Responsive Web Design
+        </p>
+      </group>
+
+
+
+
+
+
+
+    <fieldset>
+      <label id="name-label" for="name"/>Name:</label>
+      <input id="name" type="text" name="name" placeholder="ex: Denver Dela Masa" required>
+
+      <label id="email-label" for="email"/>Email:</label>
+      <input id="email" type="email" name="email" placeholder="ex: denver.delamasa@gmail.com" required>
+
+      <label id="number-label" for="number"/>Age:</label>
+      <input id="number" type="number" name="number" min="6" max="110" placeholder="ex: 21" required>
+    </fieldset>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+    <fieldset>
+      <label id="dropdown-label" for="dropdown"/>Sample Dropdown:</label>
+      <select id="dropdown" name="dropdown" placeholder="Choose an option">
+        <option>Option 1</option>
+        <option>Option 2</option>
+      </select>
+    </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+    <fieldset>
+      <label id="radio-label" for="radio">Sample Radio Button (Select One):</label>
+      <group name="radio" id="radio">
+        <input id="radio" type="radio" name="radio" value="radio-1">
+          <label for="radio-1">Radio 1</label>
+        <input id="radio" type="radio" name="radio" value="radio-2">
+          <label for="radio-2">Radio 2</label>
+      </group>
+    </fieldset>
+
+
+
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <label id="checkbox-label" for="checkbox">
+        Sample Checkbox menu (Check all that applies):
+      </label>
+      <group name="checkbox" id="checkbox">
+        <input type="checkbox" id="checkbox-1" value="checkbox-1">
+          <label for="checkbox-1">Checkbox 1</label>        
+        <input type="checkbox" id="checkbox-2" value="checkbox-2">
+          <label for="checkbox-2">Checkbox 2</label>
+      </group>
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+
+
+      
+        <label id="textarea-label" for="textarea">Sample Textarea</label>
+        <textarea id="textarea" type="text" name="textarea" placeholder="This is a textarea"></textarea>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+  <footer>
+  </footer>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  gap: 10px;
+  width: 80%;
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 20px;
+  border: solid 2px #809c13;
+  border-radius: 20px;
+  background:	#abc32f;
+
+  justify-items: middle;
+  text-align: center;
+  align-items: center;
+
+  box-shadow: 10px 10px	#809c13;
+  overflow: auto;
+}
+#survey-form:hover{
+  transform: scale(1.02);
+  transition: ease-in-out 0.13s;
+
+  box-shadow: 20px 20px #809c13;
+}
+#survey-form, textarea {
+  width: 70%;
+  height: auto; 
+  field-sizing: content;
+}
+
+html {
+  font-family: sans-serif;
+  background: #607c3c;
+  color: #02231c;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+#name-label, #email-label, #number-label, #dropdown-label, #radio-label, #checkbox-label, #textarea-label{
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 2px 2px gray;
+}
+#title {
+  font-family: monospace;
+  font-size: 60px;
+}
+#description{
+  font-size: 15px;
+  font-family: monospace;
+}
+
+.about{
+  display: flex-wrap;
+  
+}
+button {
+  padding: 10px;
+  width: 200px;
+  font-size: 15px;
+  color: white;
+  background: #607c3c;
+  border: 0;
+  border-radius: 10px;
+}
+button:hover {
+  background: #809c13;
+  transition: ease-in-out 0.13s;
+  color: #02231c;
+  transform: scale(1.05);
+}
+
+textarea, #name, #email, #number, #dropdown{
+  background: #9bf09d;
+  text-align: center ;
+  border: 0px;
+  border-radius: 5px;
+  width: 50%;
+  height: 25px;
+  box-shadow: 10px 10px #809c13;
+  margin: 10px;
+}
+textarea:hover, #name:hover, #email:hover, #number:hover, #dropdown:hover{
+  background: #9bf09d;
+  box-shadow: 5px 5px #809c13;
+  transition: ease-in-out 0.2s;
+  transform: scale(1.01);
+}
+
+textarea{
+  height: 100px;
+}
+hr{
+  width: 50%;
+  background: #809c13;
+  height: 1px;
+  border: 0;
+  margin: 40px 0px;
+}
+
+fieldset {
+  border: none;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+** end of styles.css **
+

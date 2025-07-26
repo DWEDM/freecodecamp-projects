@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="survey-form" action="form">
+      <group class="About">
+        <h1 id="title">Survey Form <a href="https://www.freecodecamp.org">freecodecamp.org</a></h1>
+        <p id="description">I made this Survey form from one of the freecodecamp's tests - Responsive Web Design
+        </p>
+      </group>
+      <fieldset>
+        <label id="name-label" for="name"/>Name:</label>
+        <input id="name" type="text" name="name" placeholder="ex: Denver Dela Masa" required>
+
+        <label id="email-label" for="email"/>Email:</label>
+        <input id="email" type="email" name="email" placeholder="ex: denver.delamasa@gmail.com" required>
+
+        <label id="number-label" for="number"/>Age:</label>
+        <input id="number" type="number" name="number" min="6" max="110" placeholder="ex: 21" required>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <label id="dropdown-label" for="dropdown"/>Sample Dropdown:</label>
+        <select id="dropdown" name="dropdown" placeholder="Choose an option">
+          <option>Option 1</option>
+          <option>Option 2</option>
+        </select>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <label id="radio-label" for="radio">Sample Radio Button (Select One):</label>
+        <group name="radio" id="radio">
+          <input id="radio" type="radio" name="radio" value="radio-1">
+            <label for="radio-1">Radio 1</label>
+          <input id="radio" type="radio" name="radio" value="radio-2">
+            <label for="radio-2">Radio 2</label>
+        </group>
+      </fieldset>
+      <hr>
+      <label id="checkbox-label" for="checkbox">
+        Sample Checkbox menu (Check all that applies):
+      </label>
+      <group name="checkbox" id="checkbox">
+        <input type="checkbox" id="checkbox-1" value="checkbox-1">
+          <label for="checkbox-1">Checkbox 1</label>        
+        <input type="checkbox" id="checkbox-2" value="checkbox-2">
+          <label for="checkbox-2">Checkbox 2</label>
+      </group>
+      <hr>
+        <label id="textarea-label" for="textarea">Sample Textarea</label>
+        <textarea id="textarea" type="text" name="textarea" placeholder="This is a textarea"></textarea>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+  <footer>
+  </footer>
+</html>
